@@ -2,17 +2,32 @@
 const checkboxes = Array.from(document.getElementsByClassName("list__checkbox"));
 const texts = Array.from(document.getElementsByClassName("list__text"));
 
-// Array to save objects with the start and end points
-const tour = []; // {start: index1, end: index2}
+// Array to save arrays with the start and end points
+const tours = []; // [[start: index1, end: index2]]
 
 // Add click event to each checkbox
 checkboxes.forEach((checkbox, index) => {
     checkbox.addEventListener("click", (e) => {
         let [stopPoint, address] = [null, null];
-        [stopPoint, address] = findAddress(index);
-        console.log(stopPoint, address)
-        texts[index].classList.toggle("lineThrough");
+        
+        if(!checkbox.classList.contains("lineThrough")) {
+            [stopPoint, address] = findAddress(index);
 
+
+            let tour = [index, stopPoint];
+            tour.sort((a, b) => a - b);
+
+            console.log(tour);
+            
+            checkboxesSelect(tour);
+            
+            tours.push(tour);
+        } else {
+
+        }
+        texts[index].classList.toggle("lineThrough");
+        
+        console.log(tours);
     })
 })
 
@@ -35,4 +50,14 @@ function findAddress(index) {
     }
 
     return [stopPoint, null];
+}
+
+
+// Function to select the respective checkboxes and line-through the respective texts
+function checkboxesSelect(tour) {
+    for(let index = tour[0] + 1; index < tour[1]; index++) {
+        checkboxes[index].checked = true;
+
+        texts[index].classList.add("lineThrough");
+    }
 }
