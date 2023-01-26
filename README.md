@@ -14,10 +14,8 @@
 This is a solution to the [Hold-Shift-to-Check-Multiple-Checkboxes Project in the JavaScript30 Course](https://courses.wesbos.com).
 
 ### Screenshot
-![Desktop Dark](./src/assets/desktop-dark.png)
-![Desktop Light](./src/assets/desktop-light.png)
-![Mobile Dark](./src/assets/mobile-dark.png)
-![Mobile Light](./src/assets/mobile-light.png)
+![Desktop](./src/assets/desktop.png)
+![Mobile](./src/assets/mobile.png)
 
 ### Links
 - Solution URL: [GitHub](https://github.com/ButchBet/Hold-Shift-to-Check-Multiple-Checkboxes)
