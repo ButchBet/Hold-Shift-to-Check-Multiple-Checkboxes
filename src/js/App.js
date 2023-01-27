@@ -7,7 +7,11 @@ let tours = []; // [[start: index1, end: index2]]
 
 // Add click event to each checkbox
 checkboxes.forEach((checkbox, index) => {
-    checkbox.addEventListener("click", (e) => {        
+    checkbox.addEventListener("click", (e) => handdleCheck(e, index))
+})
+
+function handdleCheck(e, index) {
+    if(e.shiftKey) {
         if(!texts[index].classList.contains("lineThrough")) {
             findAddress(index);
         } else {
@@ -15,12 +19,12 @@ checkboxes.forEach((checkbox, index) => {
             texts[index].classList.remove("lineThrough");
         }
 
-        // texts[index].classList.toggle("lineThrough");
-        
-        tours.so
+        // texts[index].classList.toggle("lineThrough");        
         console.log(tours);
-    })
-})
+    } else {
+        texts[index].classList.toggle("lineThrough")
+    }
+}
 
 // Function to know if the we have to select the boxes from top to down, reverser or don't slect them
 function findAddress(indexSelected) {
