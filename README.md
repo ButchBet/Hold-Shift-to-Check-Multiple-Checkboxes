@@ -19,7 +19,7 @@ This is a solution to the [Hold-Shift-to-Check-Multiple-Checkboxes Project in th
 
 ### Links
 - Solution URL: [GitHub](https://github.com/ButchBet/Hold-Shift-to-Check-Multiple-Checkboxes)
-- Live Site URL: [HSTCMC]()
+- Live Site URL: [HSTCMC](https://main--peppy-mousse-2ff35b.netlify.app/)
 
 ### Built with
 - Semantic HTML5 markup
