@@ -1,27 +1,22 @@
 
-# Wes Bos - # Hold-Shift-to-Check-Multiple-Checkboxes
+# Hold-Shift-to-Check-Multiple-Checkboxes
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Screenshot](#screenshot)
+- [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
 
-
-## Overview
-This is a solution to the [Hold-Shift-to-Check-Multiple-Checkboxes Project in the JavaScript30 Course](https://courses.wesbos.com).
-
-### Screenshot
+## Screenshot
 ![Desktop](./src/assets/desktop.png)
 ![Mobile](./src/assets/mobile.png)
 
-### Links
+## Links
 - Solution URL: [GitHub](https://github.com/ButchBet/Hold-Shift-to-Check-Multiple-Checkboxes)
 - Live Site URL: [HSTCMC](https://main--peppy-mousse-2ff35b.netlify.app/)
 
-### Built with
+## Built with
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
